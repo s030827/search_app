@@ -4,10 +4,10 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.6.2'
 
 gem 'bootsnap'
+gem 'kaminari'
 gem 'elasticsearch-model', github: 'elastic/elasticsearch-rails', branch: '6.x'
 gem 'elasticsearch-rails', github: 'elastic/elasticsearch-rails', branch: '6.x'
 gem 'jbuilder'
-gem 'kaminari'
 gem 'puma'
 gem 'rails'
 gem 'rspec'
