@@ -33,6 +33,10 @@
   </tbody>
 </table>
 
+<div class='text-center'>
+  <%= paginate @articles %>
+</div>
+
 <hr>
 <p style="text-align: center; margin-bottom: 21px">
   <%= link_to 'New Article', new_article_path, class: 'btn btn-primary btn-xs', style: 'color: #fff' %>

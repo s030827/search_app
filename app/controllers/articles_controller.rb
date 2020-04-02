@@ -2,11 +2,11 @@ class ArticlesController < ApplicationController
   before_action :set_article, only: %i[show edit update destroy]
 
   def index
-    @articles = Article.all
+    @articles = Article.page(params[:page])
   end
 
   def search
-    @articles = Article.search(params[:q]).records
+    @articles = Article.search(params[:q]).page(params[:page]).records
 
     render action: 'index'
   end
