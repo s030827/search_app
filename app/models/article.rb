@@ -4,4 +4,6 @@ class Article < ApplicationRecord
   has_many                :authorships
   has_many                :authors, through: :authorships
   has_many                :comments
+
+  include Searchable
 end
