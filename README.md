@@ -1,24 +1,20 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+01-basic
 
-Things you may want to cover:
+* docker run --name elasticsearch-rails-searchapp --publish 9200:9200 --env "discovery.type=single-node" --env "cluster.name=elasticsearch-rails" --env "cluster.routing.allocation.disk.threshold_enabled=false" --rm docker.elastic.co/elasticsearch/elasticsearch-oss:6.4.0
 
-* Ruby version
+* run  "rails runner 'Article.__elasticsearch__.create_index! force: true'"
+* rake "db:seed"
 
-* System dependencies
+02-pretty.rb
 
-* Configuration
+* docker run --name elasticsearch-rails-searchapp --publish 9200:9200 --env "discovery.type=single-node" --env "cluster.name=elasticsearch-rails" --env "cluster.routing.allocation.disk.threshold_enabled=false" --rm docker.elastic.co/elasticsearch/elasticsearch-oss:6.4.0
 
-* Database creation
+* generate "kaminari:views", "bootstrap3", "--force"
 
-* Database initialization
+* run  "rails runner 'Article.__elasticsearch__.create_index! force: true'"
+* rake "db:seed COUNT=1000"
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
-
-* ...
