@@ -5,7 +5,6 @@ ruby '2.6.2'
 
 gem 'bootsnap'
 gem 'kaminari'
-gem 'elasticsearch-dsl', git: 'git://github.com/elasticsearch/elasticsearch-ruby.git'
 gem 'elasticsearch-model', github: 'elastic/elasticsearch-rails', branch: '6.x'
 gem 'elasticsearch-rails', github: 'elastic/elasticsearch-rails', branch: '6.x'
 gem 'jbuilder'
