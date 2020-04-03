@@ -1,4 +1,10 @@
 GIT
+  remote: git://github.com/elasticsearch/elasticsearch-ruby.git
+  revision: 0afc520da71591332ac215bcf6d0674691395091
+  specs:
+    elasticsearch-dsl (0.1.9)
+
+GIT
   remote: https://github.com/elastic/elasticsearch-rails.git
   revision: 97862b5baa8a79030103fd2758b8d374439b8f68
   branch: 6.x
@@ -240,6 +246,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap
   byebug
+  elasticsearch-dsl!
   elasticsearch-model!
   elasticsearch-rails!
   jbuilder
